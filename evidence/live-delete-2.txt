@@ -1,0 +1,4 @@
+>>> :automq/start (delete)
+<<< :automq/start (1171ms)
+>>> :automq/backend-finalize (delete)
+<<< :automq/backend-finalize (2115ms)

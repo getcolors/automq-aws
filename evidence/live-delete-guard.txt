@@ -1,0 +1,3 @@
+>>> :automq/start (delete)
+<<< :automq/start (66ms)
+compute destruction is protected; set COLORS_PAR_COMPUTE_PREVENT_DESTROY=false to delete

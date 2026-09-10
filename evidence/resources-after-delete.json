@@ -1,0 +1,94 @@
+{
+  "profile": "automq-aws",
+  "region": "us-east-1",
+  "instances": [
+    {
+      "id": "i-0ce0fbd20b278a666",
+      "name": "automq-aws-1",
+      "state": "terminated",
+      "public_ip": null,
+      "private_ip": null,
+      "root_device": "/dev/sda1",
+      "ebs_volumes": []
+    },
+    {
+      "id": "i-02b472f90b6ef2e50",
+      "name": "automq-aws-2",
+      "state": "terminated",
+      "public_ip": null,
+      "private_ip": null,
+      "root_device": "/dev/sda1",
+      "ebs_volumes": []
+    },
+    {
+      "id": "i-0fe2fcf406b1a1b6f",
+      "name": "automq-aws-0",
+      "state": "terminated",
+      "public_ip": null,
+      "private_ip": null,
+      "root_device": "/dev/sda1",
+      "ebs_volumes": []
+    }
+  ],
+  "Vpcs": [],
+  "Subnets": [],
+  "RouteTables": [],
+  "InternetGateways": [],
+  "SecurityGroups": [],
+  "KeyPairs": [],
+  "recorded_ebs_volumes": [
+    {
+      "id": "vol-050f3855a919207ce",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-019d507297d376997",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-01a6bc7ab9fea334a",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    }
+  ],
+  "Volumes": [],
+  "VpcDependencies": {
+    "Vpcs": [],
+    "Subnets": [],
+    "RouteTables": [],
+    "InternetGateways": [],
+    "SecurityGroups": [],
+    "NetworkInterfaces": [],
+    "NetworkAcls": []
+  },
+  "buckets": [
+    {
+      "name": "automq-aws-state-251213589273-us-east-1",
+      "status": "absent",
+      "code": "404"
+    },
+    {
+      "name": "automq-aws-data-251213589273-us-east-1",
+      "status": "absent",
+      "code": "404"
+    },
+    {
+      "name": "automq-aws-ops-251213589273-us-east-1",
+      "status": "absent",
+      "code": "404"
+    }
+  ],
+  "iam_user": {
+    "name": "automq-aws-automq-storage",
+    "status": "absent",
+    "code": "NoSuchEntity"
+  },
+  "remaining_resource_count": 0,
+  "all_recorded_volumes_absent": true,
+  "remaining_billable_resource_count": 0
+}

@@ -1,0 +1,46 @@
+Checking out: https://github.com/getcolors/automq.git at e3beeaf08472fc3ab4e5121eca876e1f0bb6f8e9
+>>> :automq/start (create)
+<<< :automq/start (74ms)
+>>> :automq/infrastructure (create)
+>>> :colors-compute/dispatch (create)
+<<< :colors-compute/dispatch (0ms)
+>>> :colors-compute/node (create)
+>>> :colors-compute/node (create)
+>>> :colors-compute/node (create)
+<<< :colors-compute/node (38053ms)
+<<< :colors-compute/node (44271ms)
+<<< :colors-compute/node (48426ms)
+>>> :colors-compute/join (create)
+<<< :colors-compute/join (0ms)
+<<< :automq/infrastructure (138997ms)
+>>> :automq/storage (create)
+<<< :automq/storage (22307ms)
+>>> :automq/ssh-config (create)
+<<< :automq/ssh-config (1479ms)
+>>> :automq/dns (create)
+<<< :automq/dns (0ms)
+>>> :automq/ansible (create)
+<<< :automq/ansible (272756ms)
+>>> :automq/acceptance (create)
+acceptance: the cluster as a client sees it
+  note — client CA: /home/ubuntu/code/getcolors/automq-aws/./.colors/automq-aws/automq-acceptance/ca.crt
+  ok   — 54.89.192.65 serves a valid certificate
+  ok   — 100.52.253.124 serves a valid certificate
+  ok   — 18.209.62.55 serves a valid certificate
+  ok   — metadata over SASL_SSL lists 3 brokers
+  ok   — 200 records produced and consumed through the public endpoint
+  ok   — a wrong password is refused by the public endpoint
+  ok   — the client principal cannot write outside colors-
+  ok   — consumer group colors-survivor-1789030966-2323575 committed per-partition offsets before the outage
+acceptance: failover
+  ok   — partition 0 of colors-failover is led by node 2
+  ok   — 100 pre-failure records are readable before the kill
+  ok   — the partition became writable again 1s after its leader was killed
+  ok   — all 100 pre-failure records survived the leader's death
+  ok   — node 2 re-registered and caught up (lag=0 logEndOffset=6822 leader=6822)
+  ok   — consumer group colors-survivor-1789030966-2323575 kept every partition's committed offset across the outage
+  ok   — a restarted controller (node 1) re-authenticated and rejoined the quorum
+  ok   — producer performance workload completed: 20000 records sent, 1530.573200 records/sec (1.49 MB/sec), 5785.23 ms avg latency, 11268.00 ms max latency, 5842 ms 50th, 10548 ms 95th, 11042 ms 99th, 11267 ms 99.9th.
+
+acceptance: 16 passed, 0 failed
+<<< :automq/acceptance (214178ms)

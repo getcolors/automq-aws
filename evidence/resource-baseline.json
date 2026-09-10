@@ -1,0 +1,33 @@
+{
+  "profile": "automq-aws",
+  "region": "us-east-1",
+  "account": "251213589273",
+  "instance_ids": [
+    "i-0ce0fbd20b278a666",
+    "i-02b472f90b6ef2e50",
+    "i-0fe2fcf406b1a1b6f"
+  ],
+  "volumes": [
+    {
+      "id": "vol-050f3855a919207ce",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-019d507297d376997",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-01a6bc7ab9fea334a",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    }
+  ],
+  "vpc_ids": [
+    "vpc-09ab7a927b8a6331c"
+  ]
+}

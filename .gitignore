@@ -1,0 +1,6 @@
+# Default-deny private and generated dotfiles.
+.*
+!.envrc
+!.gitignore
+!.agents
+*.log

@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-09-10",
+  "profile": "automq-aws",
+  "first_successful_create_exit": 0,
+  "published_pin_reconverge_exit": 0,
+  "external_acceptance": {
+    "passed": 16,
+    "failed": 0
+  },
+  "continuity_records_exact_match_before_and_after": 50,
+  "guarded_delete_exit": 2,
+  "full_delete_exit": 0,
+  "repeat_delete_exit": 0,
+  "local_ssh_private_key_absent": true,
+  "local_ssh_public_key_absent": true,
+  "local_ssh_profile_aliases_absent": true
+}

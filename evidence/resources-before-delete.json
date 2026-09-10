@@ -1,0 +1,224 @@
+{
+  "profile": "automq-aws",
+  "region": "us-east-1",
+  "instances": [
+    {
+      "id": "i-0ce0fbd20b278a666",
+      "name": "automq-aws-1",
+      "state": "running",
+      "public_ip": "100.52.253.124",
+      "private_ip": "10.73.1.55",
+      "root_device": "/dev/sda1",
+      "ebs_volumes": [
+        {
+          "id": "vol-050f3855a919207ce",
+          "device": "/dev/sda1",
+          "root": true,
+          "delete_on_termination": true
+        }
+      ]
+    },
+    {
+      "id": "i-02b472f90b6ef2e50",
+      "name": "automq-aws-2",
+      "state": "running",
+      "public_ip": "18.209.62.55",
+      "private_ip": "10.73.1.145",
+      "root_device": "/dev/sda1",
+      "ebs_volumes": [
+        {
+          "id": "vol-019d507297d376997",
+          "device": "/dev/sda1",
+          "root": true,
+          "delete_on_termination": true
+        }
+      ]
+    },
+    {
+      "id": "i-0fe2fcf406b1a1b6f",
+      "name": "automq-aws-0",
+      "state": "running",
+      "public_ip": "54.89.192.65",
+      "private_ip": "10.73.1.110",
+      "root_device": "/dev/sda1",
+      "ebs_volumes": [
+        {
+          "id": "vol-01a6bc7ab9fea334a",
+          "device": "/dev/sda1",
+          "root": true,
+          "delete_on_termination": true
+        }
+      ]
+    }
+  ],
+  "Vpcs": [
+    {
+      "id": "vpc-09ab7a927b8a6331c",
+      "name": "automq-aws"
+    }
+  ],
+  "Subnets": [
+    {
+      "id": "subnet-078cacf9ba4ccff1c",
+      "name": "automq-aws"
+    }
+  ],
+  "RouteTables": [
+    {
+      "id": "rtb-0a5a3db6b2deff0f8",
+      "name": "automq-aws"
+    }
+  ],
+  "InternetGateways": [
+    {
+      "id": "igw-0fe1d7da4a0d1d78b",
+      "name": "automq-aws"
+    }
+  ],
+  "SecurityGroups": [
+    {
+      "id": "sg-039ee6848eb004d3b",
+      "name": "automq-aws-firewall"
+    }
+  ],
+  "KeyPairs": [
+    {
+      "id": "key-0ca78f7ecc8c83761",
+      "name": "automq-aws"
+    }
+  ],
+  "recorded_ebs_volumes": [
+    {
+      "id": "vol-050f3855a919207ce",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-019d507297d376997",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    },
+    {
+      "id": "vol-01a6bc7ab9fea334a",
+      "device": "/dev/sda1",
+      "root": true,
+      "delete_on_termination": true
+    }
+  ],
+  "Volumes": [
+    {
+      "id": "vol-050f3855a919207ce",
+      "state": "in-use",
+      "size_gib": 40,
+      "encrypted": true
+    },
+    {
+      "id": "vol-01a6bc7ab9fea334a",
+      "state": "in-use",
+      "size_gib": 40,
+      "encrypted": true
+    },
+    {
+      "id": "vol-019d507297d376997",
+      "state": "in-use",
+      "size_gib": 40,
+      "encrypted": true
+    }
+  ],
+  "VpcDependencies": {
+    "Vpcs": [
+      {
+        "id": "vpc-09ab7a927b8a6331c",
+        "name": "automq-aws"
+      }
+    ],
+    "Subnets": [
+      {
+        "id": "subnet-078cacf9ba4ccff1c",
+        "name": "automq-aws"
+      }
+    ],
+    "RouteTables": [
+      {
+        "id": "rtb-0a5a3db6b2deff0f8",
+        "name": "automq-aws"
+      },
+      {
+        "id": "rtb-0dff14a473ecd4145",
+        "name": null
+      }
+    ],
+    "InternetGateways": [
+      {
+        "id": "igw-0fe1d7da4a0d1d78b",
+        "name": "automq-aws"
+      }
+    ],
+    "SecurityGroups": [
+      {
+        "id": "sg-039ee6848eb004d3b",
+        "name": "automq-aws-firewall"
+      },
+      {
+        "id": "sg-0e1205dbd4de7406c",
+        "name": null
+      }
+    ],
+    "NetworkInterfaces": [
+      {
+        "id": "eni-046a926950f036bc9",
+        "name": null
+      },
+      {
+        "id": "eni-0b802e367688d0feb",
+        "name": null
+      },
+      {
+        "id": "eni-0d9b46edfc8885aed",
+        "name": null
+      }
+    ],
+    "NetworkAcls": [
+      {
+        "id": "acl-004f15ddcad4416ee",
+        "name": null
+      }
+    ]
+  },
+  "buckets": [
+    {
+      "name": "automq-aws-state-251213589273-us-east-1",
+      "status": "present",
+      "ownership_tags": {
+        "colors:purpose": "managed-backend",
+        "colors:owner": "251213589273",
+        "colors:profile": "automq-aws"
+      }
+    },
+    {
+      "name": "automq-aws-data-251213589273-us-east-1",
+      "status": "present",
+      "ownership_tags": {
+        "colors:owner": "automq-storage",
+        "colors:profile": "automq-aws"
+      }
+    },
+    {
+      "name": "automq-aws-ops-251213589273-us-east-1",
+      "status": "present",
+      "ownership_tags": {
+        "colors:owner": "automq-storage",
+        "colors:profile": "automq-aws"
+      }
+    }
+  ],
+  "iam_user": {
+    "name": "automq-aws-automq-storage",
+    "status": "present"
+  },
+  "remaining_resource_count": 22,
+  "all_recorded_volumes_absent": false,
+  "remaining_billable_resource_count": 9
+}
