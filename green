@@ -26,7 +26,7 @@
 ;; Managed by `bb pin` — do not edit by hand. nil before this repository has
 ;; been pushed and stamped: a launcher that cannot resolve its own library says
 ;; so rather than inventing a SHA or silently using whatever is lying around.
-(def ^:private automq-sha "d8babcfee7eebca11ffff4f5f82475bb8a2c6bfc")
+(def ^:private automq-sha "4bf8548cbff2a2d1813011454b284135c36cae96")
 
 (def ^:private automq-git-url "https://github.com/getcolors/automq.git")
 (def ^:private green-git-url "https://github.com/getcolors/green.git")
@@ -52,7 +52,7 @@
     (let [automq (lib-coord "AUTOMQ_LIB_ROOT" automq-git-url automq-sha "green")
           green (lib-coord "GREEN_LIB_ROOT" green-git-url nil nil)
           once (lib-coord "ONCE_LIB_ROOT" once-git-url nil "green")
-          compute (lib-coord "COLORS_COMPUTE_LIB_ROOT" "https://github.com/getcolors/colors-compute.git" "87ec5661fc8807159419d90d437247f3503469c7" "green")]
+          compute (lib-coord "COLORS_COMPUTE_LIB_ROOT" "https://github.com/getcolors/colors-compute.git" "ae28ea74962bb1897fa6365c143c1d43ac1fe095" "green")]
       (if-not automq
         (str "this launcher carries no automq pin.\n"
              "It has not been stamped by `bb pin`, which cannot run until the "
