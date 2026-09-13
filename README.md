@@ -56,6 +56,6 @@ See [verification.md](verification.md) for measured live results and final
 resource status. Private logs and `.colors/` are excluded from git.
 
 The launcher and `.agents/skills/package-automq-green/` were manually copied
-from AutoMQ commit `678f218`; no installer lockfile is claimed. The root launcher
-is byte-identical to the copied payload and pins source commit `720cbe0`, which
+from AutoMQ commit `0d5efc5`; no installer lockfile is claimed. The root launcher
+is byte-identical to the copied payload and pins source commit `4769f88`, which
 adopts colors-compute `ae28ea7`.
